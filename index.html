@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BAVE PHONE​MOBILE​ SERVICE - บริการซ่อมมือถือครบวงจร ช่างมืออาชีพ</title>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Kanit', sans-serif;
+        }
+        body {
+            background-color: #f8f9fa;
+            color: #333;
+            line-height: 1.6;
+        }
+        /* Navigation */
+        nav {
+            background: #ffffff;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 20px;
+        }
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 14px;
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: #12518c;
+            text-decoration: none;
+        }
+        .logo img {
+            height: 65px;
+            width: auto;
+            object-fit: contain;
+            transition: transform 0.3s;
+        }
+        .logo:hover img {
+        transform: scale(1.05);
+        }​
+        .btn-contact {
+            background: #1877f2;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            transition: 0.3s;
+        }
+        .btn-contact:hover {
+            background: #0d65d9;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, #12518c 0%, #1d72bd 100%);
+            color: white;
+            padding: 80px 20px;
+            text-align: center;
+        }
+        .hero-logo {
+            max-width: 260px;
+            height: auto;
+            margin-bottom: 25px;
+            background: rgba(255, 255, 255, 0.95);
+            padding: 15px 25px;
+            border-radius: 12px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+        }
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+        }
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 25px;
+            opacity: 0.95;
+        }
+        .btn-primary-custom {
+            background: #d97724;
+            color: #fff;
+            padding: 12px 30px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.1rem;
+            display: inline-block;
+            transition: 0.3s;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+        }
+        .btn-primary-custom:hover {
+            background: #b86017;
+        }
+
+        /* Services Section */
+        .container {
+            max-width: 1200px;
+            margin: 60px auto;
+            padding: 0 20px;
+        }
+        .section-title {
+            text-align: center;
+            font-size: 2rem;
+            margin-bottom: 40px;
+            color: #111;
+        }
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+        }
+        .service-card {
+            background: white;
+            padding: 30px 20px;
+            border-radius: 12px;
+            text-align: center;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            transition: transform 0.3s;
+        }
+        .service-card:hover {
+            transform: translateY(-5px);
+        }
+        .service-card i {
+            font-size: 2.5rem;
+            color: #12518c;
+            margin-bottom: 15px;
+        }
+        .service-card h3 {
+            margin-bottom: 10px;
+        }
+
+        /* Contact Section */
+        .contact-box {
+            background: white;
+            border-radius: 12px;
+            padding: 40px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            text-align: center;
+        }
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 20px;
+            flex-wrap: wrap;
+        }
+        .social-btn {
+            padding: 12px 24px;
+            border-radius: 8px;
+            color: white;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-weight: 600;
+            font-size: 1.05rem;
+        }
+        .fb-btn { background: #1877f2; }
+        .phone-btn { background: #12518c; }
+
+        /* Footer */
+        footer {
+            background: #1a1a1a;
+            color: white;
+            text-align: center;
+            padding: 25px 20px;
+            margin-top: 60px;
+        }
+        footer img {
+            height: 40px;
+            margin-bottom: 10px;
+            filter: brightness(0) invert(1);
+            opacity: 0.8;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header / Navbar -->
+    <nav>
+        <div class="nav-container">
+            <a href="#" class="logo">
+                <img src="21808png.png" alt="BAVE PHONE​ MOBILE SERVICE Logo">
+                <span>BAVE​ PHONE​ MOBILE SERVICE​</span>
+            </a>
+            <a href="https://www.facebook.com/share/18kxEYgC78/19SUob831W/" target="_blank" class="btn-contact">
+                <i class="fab fa-facebook"></i> ติดต่อผ่าน Facebook
+            </a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <img src="21808png.png" alt="BAVE PHONE MOBILE​ SERVICE Logo" class="hero-logo">
+        <h1>บริการซ่อมมือถือ ทุกรุ่น ทุกอาการ</h1>
+        <p>เปลี่ยนจอ เปลี่ยนแบต ตกน้ำ ดับ เปิดไม่ติด อะไหล่แท้ งานละเอียด โดยช่างผู้เชี่ยวชาญ</p>
+        <a href="#contact" class="btn-primary-custom">ประเมินราคาซ่อมฟรี</a>
+    </section>
+
+    <!-- Services Section -->
+    <div class="container">
+        <h2 class="section-title">บริการของเรา</h2>
+        <div class="services-grid">
+            <div class="service-card">
+                <i class="fas fa-mobile-alt"></i>
+                <h3>เปลี่ยนหน้าจอ</h3>
+                <p>จอแตก จอลาย จอมืด ทัชสกรีนไม่ได้ เปลี่ยนด่วน รอรับได้เลย</p>
+            </div>
+            <div class="service-card">
+                <i class="fas fa-battery-full"></i>
+                <h3>เปลี่ยนแบตเตอรี่</h3>
+                <p>แบตเสื่อม แบตบวม แบตหมดเร็ว แบตเตอรี่คุณภาพสูง มีรับประกัน</p>
+            </div>
+            <div class="service-card">
+                <i class="fas fa-tools"></i>
+                <h3>ซ่อมบอร์ด / เครื่องตกน้ำ</h3>
+                <p>เครื่องดับ เปิดไม่ติด โดนน้ำ ล้างบอร์ด ซ่อมระบบไฟลัดวงจร</p>
+            </div>
+            <div class="service-card">
+                <i class="fas fa-unlock-alt"></i>
+                <h3>ปลดล็อก / ลงโปรแกรม</h3>
+                <p>ลืมรหัสผ่าน ปลดล็อกเครื่อง แฟลชเครื่อง อัปเดตระบบปฏิบัติการ</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact Section -->
+    <div class="container" id="contact">
+        <div class="contact-box">
+            <h2>สอบถามรายละเอียด / ประเมินราคาฟรี</h2>
+            <p style="margin-top: 10px; color: #666;">ส่งรูปอาการเสียหรือสอบถามช่างได้ทันทีผ่านช่องทางด้านล่าง</p>
+            
+            <div class="social-links">
+                <a href="https://www.facebook.com/share/19SUob831W/" target="_blank" class="social-btn fb-btn">
+                    <i class="fab fa-facebook-f"></i> ทักเพจ Facebook
+                </a>
+                <a href="tel:0938244683" class="social-btn phone-btn">
+                    <i class="fas fa-phone"></i> โทร 093-824-4683
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 BAVE​ PHONE​ MOBILE SERVICE | บริการด้วยใจ ซื่อสัตย์ รวดเร็ว​ สงวนลิขสิทธิ์​21808.pngสิทธิ์​</p>
+    </footer>
+
+</body>
+</html>
